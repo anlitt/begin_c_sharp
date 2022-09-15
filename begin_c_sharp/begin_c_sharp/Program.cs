@@ -11,13 +11,15 @@ namespace begin_c_sharp
         static void Main(string[] args)
         {
             int i = 0; 
-            while(i < 10)
+            do
             {
                 Console.WriteLine(i);
                 i++;
-            }
+            } while (i < 10);
+
             //for(int i = 0; i< 10; i++)
             //kleiner unterschied zwischen while und for
+            //do ist fußgesteuert, er macht es auf jeden fall und while ist kopfgesteuert, das heißt es wird zuerst geprüft ob es gemacht werden kann
             Console.ReadLine();
         }
     }
