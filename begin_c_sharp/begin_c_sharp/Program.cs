@@ -14,9 +14,12 @@ namespace begin_c_sharp
             string userName = Console.ReadLine();
         
             Console.WriteLine("hello " + userName);
-            Console.WriteLine("wie alt bist du?");
+            Console.WriteLine("wie alt bist du aktuell?");
             int age = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("du bist also " + age);
+            Console.WriteLine("Wie alt bist du in X Jahren?");
+            int nextYear = Convert.ToInt32(Console.ReadLine());
+            int sumYear = age + nextYear;
+            Console.WriteLine("Du bist also in " + nextYear + " Jahren, " + sumYear);
             Console.ReadLine();
         }
     }
