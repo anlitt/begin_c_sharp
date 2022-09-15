@@ -12,9 +12,9 @@ namespace begin_c_sharp
         {
             Console.WriteLine("Gib mir ein Wort");
             string entry = Console.ReadLine();
-            string replaced_entry = entry.Replace("Umd", "Gmc").Replace("u", "g");
-            Console.WriteLine("Der alte Text war " + entry);
-            Console.WriteLine("Der neue Text ist " + replaced_entry);
+            string trimmed_entry= entry.Trim(' ', 'a');
+            Console.WriteLine("Old String " + entry + ":");
+            Console.WriteLine("New String " + trimmed_entry + ":");
             Console.ReadLine();
         }
     }
