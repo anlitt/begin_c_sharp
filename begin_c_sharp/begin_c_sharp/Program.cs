@@ -10,11 +10,17 @@ namespace begin_c_sharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Wie groß bist du ? (in Meter)?");
-            float height = float.Parse(Console.ReadLine());
-            int multiplicator = 3;
-            Console.WriteLine("Du bist " + height * multiplicator + " groß");
+            Console.WriteLine("Wie alt bist du?");
+            int age = Convert.ToInt32(Console.ReadLine());
+            if (age < 18)
+            {
+                Console.WriteLine("Du kommscht hier net rein!");
+            }
+            else
+            {
+                Console.WriteLine("Viel Spaß!");
 
+            }
             Console.ReadLine();
         }
     }
