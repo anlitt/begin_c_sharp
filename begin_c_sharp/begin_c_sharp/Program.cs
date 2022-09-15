@@ -18,8 +18,13 @@ namespace begin_c_sharp
             }
             else
             {
-                Console.WriteLine("Viel Spaß!");
-
+                if (age < 28)
+                { Console.WriteLine("Einmal den Ausweis bitte!"); 
+                }
+                else
+                { Console.WriteLine("Bei dir sehe ich, dass du alt genug bist.");
+                }
+                Console.WriteLine("Viel Spaß heute abend");
             }
             Console.ReadLine();
         }
