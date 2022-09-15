@@ -10,16 +10,24 @@ namespace begin_c_sharp
     {
         static void Main(string[] args)
         {
-            int i = 0; 
-            do
+            string entry = "Das ist ein Text mit Wörtern";
+            //0: Das 
+            //1: ist 
+            //2: ein
+            //3: Text
+            //4: mit
+            //5: Wörtern
+            string[] entries = entry.Split(' ');
+            //wird immer bei Leertasten getrennt
+            foreach (string wort in entries)
             {
-                Console.WriteLine(i);
-                i++;
-            } while (i < 10);
-
-            //for(int i = 0; i< 10; i++)
-            //kleiner unterschied zwischen while und for
-            //do ist fußgesteuert, er macht es auf jeden fall und while ist kopfgesteuert, das heißt es wird zuerst geprüft ob es gemacht werden kann
+                Console.WriteLine(wort);
+            }
+            for(int i = 0; i<entries.Length;i++)
+                //sagt beides in diesem fall das selbe; hier reine präferenzfrage
+            {
+                Console.WriteLine(entries[i]);
+            }
             Console.ReadLine();
         }
     }
