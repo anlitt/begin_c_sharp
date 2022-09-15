@@ -10,6 +10,8 @@ namespace begin_c_sharp
     {
         static void Main(string[] args)
         {
+            //ask user for age
+            /*
             Console.WriteLine("Wie alt bist du?");
             int age = Convert.ToInt32(Console.ReadLine());
             if (age < 18)
@@ -25,7 +27,9 @@ namespace begin_c_sharp
                 { Console.WriteLine("Bei dir sehe ich, dass du alt genug bist.");
                 }
                 Console.WriteLine("Viel Spaß heute abend");
-            }
+            }*/
+            Console.WriteLine("abcde");
+            //verhindert schließen der Konsole, ermöglicht eingabe dann
             Console.ReadLine();
         }
     }
