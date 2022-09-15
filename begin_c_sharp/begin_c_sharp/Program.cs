@@ -10,16 +10,11 @@ namespace begin_c_sharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("wie heißt du?");
-            string userName = Console.ReadLine();
-        
-            Console.WriteLine("hello " + userName);
-            Console.WriteLine("wie alt bist du aktuell?");
-            int age = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Wie alt bist du in X Jahren?");
-            int nextYear = Convert.ToInt32(Console.ReadLine());
-            int sumYear = age + nextYear;
-            Console.WriteLine("Du bist also in " + nextYear + " Jahren, " + sumYear);
+            Console.WriteLine("Wie groß bist du ? (in Meter)?");
+            float height = float.Parse(Console.ReadLine());
+            int multiplicator = 3;
+            Console.WriteLine("Du bist " + height * multiplicator + " groß");
+
             Console.ReadLine();
         }
     }
