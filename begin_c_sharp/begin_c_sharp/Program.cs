@@ -10,8 +10,8 @@ namespace begin_c_sharp
     {
         static void Main(string[] args)
         {
-            string userName123 = "Andreas";
-            Console.WriteLine("hello " + userName123);
+            string userName = "Andreas";
+            Console.WriteLine("hello " + userName);
             Console.ReadLine();
         }
     }
