@@ -10,11 +10,14 @@ namespace begin_c_sharp
     {
         static void Main(string[] args)
         {
-            for (int i = 0; i < 10; i += 2)
+            int i = 0; 
+            while(i < 10)
             {
                 Console.WriteLine(i);
+                i++;
             }
-            
+            //for(int i = 0; i< 10; i++)
+            //kleiner unterschied zwischen while und for
             Console.ReadLine();
         }
     }
