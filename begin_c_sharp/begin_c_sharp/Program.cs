@@ -14,6 +14,9 @@ namespace begin_c_sharp
             string userName = Console.ReadLine();
         
             Console.WriteLine("hello " + userName);
+            Console.WriteLine("wie alt bist du?");
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("du bist also " + age);
             Console.ReadLine();
         }
     }
